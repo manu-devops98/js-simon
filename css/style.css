@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 5em auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 3em;
+    color: red;
+}
+
+.number {
+    font-size: 4em;
+    display: inline-block;
+    margin: 0.5em;
+}
