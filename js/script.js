@@ -27,10 +27,12 @@ for (let i = 0; i < 5; i++) {
                 if (numbersCorrect == 5) {
                     container.innerHTML = `<h1>Congratulazioni, hai indovinato tutti i numeri</h1>`;
                 console.log('numbersCorrect if',numbersCorrect);//consolelog 
-                } else if (numbersCorrect != 5) {
+                } else if (numbersCorrect != numbRand.length) {
                     container.innerHTML = `<h1>Peccato, hai indovinato ${numbersCorrect} numeri : ${arrayUserNumber}</h1>`;
                 console.log('numbers else', numbersCorrect);//consolelog            
                 } 
+            } else {
+                container.innerHTML = `<h1>Peccato, non hai indovinato nessun numero</h1>`;
             }
         }
     }, 32 * 1000); 
