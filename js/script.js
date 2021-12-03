@@ -47,7 +47,7 @@ for (let i = 0; i < 5; i++) {
                 container.innerHTML = `<h1>Peccato, hai indovinato ${numbersCorrect} numeri : ${arrayUserNumber}</h1>`;
             } 
         }
-    }, 33 * 1000); 
+    }, 35 * 1000); 
     } 
 }
 
