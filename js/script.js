@@ -18,7 +18,7 @@ const timer = setInterval(() => {
         clearInterval(timer); 
         container.innerHTML = ''; 
     }
-}, 2000);
+}, 1000);
 
 let numbRand = [];
 for (let i = 0; i < 5; i++) {
@@ -31,23 +31,20 @@ for (let i = 0; i < 5; i++) {
            let arrayUserNumber = [];
         for (let x = 1; x <= 5; x++) {
             const userNumber = parseInt(prompt(`inserisci numero visualizzato`));
-            arrayUserNumber.push(userNumber);
-        console.log(arrayUserNumber);//consolelog
-        console.log('usernumber',userNumber);//consolelog
+            console.log(arrayUserNumber);//consolelog
+            console.log('usernumber',userNumber);//consolelog
             if (numbRand.includes(userNumber)) {
                 numbersCorrect += 1;
+                arrayUserNumber.push(userNumber);
                 if (numbersCorrect == numbRand.length) {
                     container.innerHTML = `<h1>Congratulazioni, hai indovinato tutti i numeri</h1>`;
                 console.log('numbersCorrect if',numbersCorrect);//consolelog 
-                } else if (numbersCorrect < numbRand.length) {
-                    container.innerHTML = `<h1>Peccato, hai indovinato ${numbersCorrect} numeri : ${arrayUserNumber}</h1>`;
-                console.log('numbers else', numbersCorrect);//consolelog            
-                } 
+                }       
             } else if (!(numbRand.includes(userNumber))) {
                 container.innerHTML = `<h1>Peccato, hai indovinato ${numbersCorrect} numeri : ${arrayUserNumber}</h1>`;
             } 
         }
-    }, 35 * 1000); 
+    }, 32 * 1000); 
     } 
 }
 
